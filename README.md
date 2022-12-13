@@ -8,6 +8,9 @@ The example has the following flow:
 4. Stop wifi, de-init and cleanup
 5. Repeat from 1.)
 
+
+(Based on ESP-IDF version 4.4.2)
+
 ## How to use example
 
 ### Configure the project
