@@ -2,7 +2,7 @@
 
 This example "merges" the wifi station example and the ADC2 example in order to test using wifi and the ADC2 on the ESP32-WROOM sequentially.
 The example has the following flow:
-1. Sample the ADC2 chanal #0
+1. Sample the ADC2 channel #0
 2. Install the wifi driver and connect
 3. Wait for wifi to "settle" (e.g. server communication would go here)
 4. Stop wifi, de-init and cleanup
