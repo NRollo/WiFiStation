@@ -1,6 +1,7 @@
 # ESP32 Wi-Fi Station and ADC2 Example
 
-This example "merges" the wifi station example and the ADC2 example in order to test using wifi and the ADC2 on the ESP32-WROOM sequentially.
+This example "merges" the wifi station example and the ADC2 example in order to test using wifi and the ADC2 on e.g. the ESP32-WROOM sequentially. As the ADC2 is "disabled" when the WiFi driver is installed and configured, it is only possible to use the two features one at a time if both features are needed in the application - meaning that the WiFi driver must be disconnected and uninstalled for the ADC2 to work.
+
 The example has the following flow:
 1. Sample the ADC2 channel #0
 2. Install the wifi driver and connect
