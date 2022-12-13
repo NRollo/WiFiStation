@@ -1,8 +1,12 @@
-# Wi-Fi Station Example
+# ESP32 Wi-Fi Station and ADC2 Example
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
-
-This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
+This example "merges" the wifi station example and the ADC2 example in order to test using wifi and the ADC2 on the ESP32-WROOM sequentially.
+The example has the following flow:
+1. Sample the ADC2 chanal #0
+2. Install the wifi driver and connect
+3. Wait for wifi to "settle" (e.g. server communication would go here)
+4. Stop wifi, de-init and cleanup
+5. Repeat from 1.)
 
 ## How to use example
 
