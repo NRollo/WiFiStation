@@ -140,6 +140,12 @@ void app_main(void)
 {
     esp_err_t err = ESP_OK;
 
+    esp_log_level_set("wifi", ESP_LOG_ERROR);
+    //esp_log_level_set("wifi station", ESP_LOG_ERROR);
+    esp_log_level_set("esp_netif_handlers", ESP_LOG_WARN);
+    esp_log_level_set("wifi_init", ESP_LOG_ERROR);
+
+
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {

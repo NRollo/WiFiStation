@@ -3,3 +3,6 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+sdkconfig.nodemcu-32s
+sdkconfig.nodemcu-32s.old
+README.md
