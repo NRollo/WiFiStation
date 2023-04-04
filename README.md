@@ -11,7 +11,7 @@ The example has the following flow:
 
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
-(Based on ESP-IDF version 4.4.2)
+(Based on ESP-IDF version 4.4.2, for version 5.0.1 support legacy ADC support is enabled)
 
 ## How to use example
 
