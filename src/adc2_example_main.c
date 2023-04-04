@@ -13,6 +13,7 @@
 #include "freertos/queue.h"
 #include "driver/gpio.h"
 #include "driver/adc.h"
+//#include "esp_adc/adc_oneshot.h"
 #include "esp_system.h"
 #include "esp_log.h"
 
@@ -36,7 +37,7 @@ void ADC_main(void)
 
     //be sure to do the init before using adc2.
     ESP_LOGI(TAG, "adc2_init...");
-    adc2_config_channel_atten( ADC2_EXAMPLE_CHANNEL, ADC_ATTEN_11db );
+    adc2_config_channel_atten( ADC2_EXAMPLE_CHANNEL, ADC_ATTEN_DB_11 );
 
     vTaskDelay(2 * portTICK_PERIOD_MS);
 
